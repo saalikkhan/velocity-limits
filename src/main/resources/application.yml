@@ -1,0 +1,12 @@
+server:
+  port: 8080
+  servlet:
+    application-display-name: Funds
+    context-path: /funds-service
+
+
+spring:
+  application:
+    name: funds-service
+  profiles:
+    active: dev

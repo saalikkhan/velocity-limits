@@ -1,0 +1,13 @@
+version: '1.0.0-2023.10.15'
+services:
+  velocity-limits-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: velocity-limits-ms
+    environment:
+      - DATABASE_URL_H2=jdbc:h2:file:/data/demo
+      - DATABASE_USERNAME_H2=myuser
+      - DATABASE_PASSWORD_H2=mypassword
+    ports:
+      - "8080:8080"
